@@ -24,11 +24,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({
-  params,
-}: {
-  params: { id: string };
-}) => {
+export const getStaticProps = async ({ params }: any) => {
   const listingData = await getListingData(params.id);
 
   return {
@@ -46,7 +42,7 @@ export default function Property({ listingData }: any) {
     },
     {
       initialData: {
-        data: listingData.listings,
+        data: listingData.listing,
       },
     }
   );

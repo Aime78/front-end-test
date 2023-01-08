@@ -4,7 +4,7 @@ import { apiURL } from "constants/apiURL";
 const getListings = async () => {
   try {
     const resp = await axios.get(
-      `${apiURL}/listings?_limit=20
+      `${apiURL}/listings?_limit=10
           `
     );
 

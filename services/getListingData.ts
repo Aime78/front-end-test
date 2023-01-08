@@ -4,10 +4,10 @@ import { apiURL } from "constants/apiURL";
 const getListingData = async (id: string) => {
   try {
     const resp = await axios.get(`${apiURL}/listings?id=${id}`);
-    const listings = resp.data;
+    const listing = resp.data;
     return {
       id,
-      listings,
+      listing,
     };
   } catch (error) {
     return error;

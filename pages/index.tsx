@@ -60,7 +60,6 @@ export default function Home({
    */
   useEffect(() => {
     setHasMore(propertiesListings.length < 120 ? true : false);
-    console.log(propertiesListings.length);
   }, [propertiesListings]);
 
   return (
