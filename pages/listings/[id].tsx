@@ -29,7 +29,7 @@ export const getStaticProps = async ({ params }: any) => {
 
   return {
     props: {
-      listingData: listingData,
+      listingData: JSON.parse(JSON.stringify(listingData)),
     },
   };
 };
