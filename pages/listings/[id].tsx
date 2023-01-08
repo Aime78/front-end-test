@@ -33,7 +33,7 @@ export const getStaticProps = async ({
 
   return {
     props: {
-      listingData,
+      listingData: listingData,
     },
   };
 };
@@ -58,12 +58,7 @@ export default function Property({ listingData }: listingDataProp) {
     }
   );
 
-  let listing;
-  if (query) {
-    [listing] = query.data.data;
-  } else {
-    [listing] = listingData.listings;
-  }
+  const [listing] = query.data.data;
 
   return (
     <>
