@@ -30,25 +30,25 @@ export const getStaticProps = async ({ params }: any) => {
 
   return {
     props: {
-      listingData: defaultListing,
+      listing: defaultListing,
     },
   };
 };
 
-export default function Property({ listingData }: any) {
-  const query = useQuery(
-    ["listing"],
-    () => {
-      return axios(`${apiURL}/listings?id=${listingData.id}`) as any;
-    },
-    {
-      initialData: {
-        data: listingData.listing,
-      },
-    }
-  );
+export default function Property({ listing }: any) {
+  // const query = useQuery(
+  //   ["listing"],
+  //   () => {
+  //     return axios(`${apiURL}/listings?id=${listingData.id}`) as any;
+  //   },
+  //   {
+  //     initialData: {
+  //       data: listingData,
+  //     },
+  //   }
+  // );
 
-  const [listing] = query.data.data;
+  // const [listing] = query.data.data;
 
   return (
     <>
