@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project, built with the latest tech stacks such as TypeScript, React query, tailwind css. You can check a [`live demo here`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project, built with the latest tech stacks such as TypeScript, React query, tailwind css. You can check a [`live demo here`](https://front-end-test-2fjq9zkpi-aime78.vercel.app/).
 
 ## The strategy for rebuilding the legacy application
 
