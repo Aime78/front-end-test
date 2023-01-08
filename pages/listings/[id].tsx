@@ -38,14 +38,7 @@ export const getStaticProps = async ({
   };
 };
 
-type listingDataProp = {
-  listingData: {
-    id: string;
-    listings: propertyProp[];
-  };
-};
-
-export default function Property({ listingData }: listingDataProp) {
+export default function Property({ listingData }: any) {
   const query = useQuery(
     ["listing"],
     () => {
